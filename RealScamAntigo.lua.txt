@@ -1776,7 +1776,7 @@ UIS.InputBegan:Connect(function(input, gpe)
             disableAutoBat()
         end
     elseif KB.GuiHide and kc == KB.GuiHide.kb then
-        local mainFrame = game:GetService("CoreGui"):FindFirstChild("RealscamHub")
+        local mainFrame = game:GetService("CoreGui"):FindFirstChild("VENOM.VS")
         if mainFrame then
             local main = mainFrame:FindFirstChild("Main")
             local shadow = mainFrame:FindFirstChild("Shadow")
@@ -1795,11 +1795,11 @@ end)
 -- ============================================================
 local function buildGui()
     local CoreGui = game:GetService("CoreGui")
-    local oldGui = CoreGui:FindFirstChild("RealscamHub")
+    local oldGui = CoreGui:FindFirstChild("VENOM.VS")
     if oldGui then oldGui:Destroy() end
 
     local gui = Instance.new("ScreenGui")
-    gui.Name = "RealscamHub"
+    gui.Name = "VENOM.VS"
     gui.ResetOnSpawn = false
     gui.DisplayOrder = 10
     gui.IgnoreGuiInset = true
